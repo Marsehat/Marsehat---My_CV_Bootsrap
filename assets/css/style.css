@@ -489,7 +489,19 @@ section {
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-3px);
 }
+.clickable-image {
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid #1f5297; /* Add border */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Increase shadow */
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
 
+.clickable-image:hover {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+  transform: translateY(-3px);
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
