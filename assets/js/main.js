@@ -200,5 +200,4 @@ function displayGreeting() {
 
 window.onload = function() {
   displayGreeting();
-  // existing code...
 }
