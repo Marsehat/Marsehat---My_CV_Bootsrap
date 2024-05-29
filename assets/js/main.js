@@ -181,3 +181,24 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
     document.body.style.zoom = '100%'; // Reset size
   }
 });
+
+function displayGreeting() {
+  var today = new Date();
+  var hour = today.getHours();
+  var greeting;
+
+  if (hour < 12) {
+    greeting = "Good morning!";
+  } else if (hour < 18) {
+    greeting = "Good afternoon!";
+  } else {
+    greeting = "Good evening!";
+  }
+
+  document.getElementById("greeting").innerText = greeting;
+}
+
+window.onload = function() {
+  displayGreeting();
+  // existing code...
+}
